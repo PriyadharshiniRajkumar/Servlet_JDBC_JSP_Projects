@@ -1,0 +1,27 @@
+
+
+<!-- Import is the only tag you can use multiple times 
+<--%@page import="java.io.*"%>
+<%--@include file="header.jsp"%>-->
+<%-- Example for Exception Handling 
+	<%
+	 pageContext.setAttribute("name","priya",pageContext.SESSION_SCOPE); 
+	int k =9/0;
+	 %> 
+	--%>
+	<!-- Snippet for JSTL Topic - below java code is equivalent to experssion lang. 
+	
+	<--%
+	String name = request.getAttribute("label").toString();
+	out.println("Request Attribute Label : "+name);
+	%> -->
+	
+ <!-- Expression Language - it used to print attribute in JSTL 
+ ${label} -->
+ <!-- using  JSTL core  
+    <c:out value = "${label}"/>
+    
+    
+    <c:forEach items=" ${students} var="s">
+    ${s}
+    </c:forEach>-->
